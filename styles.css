@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f5dd02;
+}
+
+.all-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.all-container > div {
+  flex: 1;
+}
+
+.ai,
+.human {
+  width: 300px;
+}
+.ai-person-vs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+
+.rock-paper-scissors-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+.rock-paper-scissors-container > img {
+  width: 150px;
+  display: none;
+  cursor: pointer;
+}
+.mid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 670px;
+}
+.mid-container .score {
+  font-size: 200px;
+  display: none;
+}
+.mid-container .draw {
+  font-size: 150px;
+  visibility: hidden;
+  text-align: center;
+  display: none;
+}
+.start-button {
+  color: black;
+  background-color: #f5dd02;
+  width: 200px;
+  height: 80px;
+  font-size: 35px;
+  border: black solid 5px;
+  border-radius: 15px;
+  transition: background-color 0.15s, color 0.15s, opacity 0.15s;
+  font-weight: bold;
+}
+.start-button:hover {
+  color: #f5dd02;
+  background-color: black;
+  cursor: pointer;
+}
+.start-button:active {
+  opacity: 0.8;
+}
+.who-win {
+  font-size: 150px;
+  font-weight: bold;
+  display: none;
+}
